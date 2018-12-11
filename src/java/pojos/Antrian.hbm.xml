@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 31, 2018 2:37:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Antrian" table="antrian" catalog="rsku" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="tanggal" type="date">
+            <column name="tanggal" length="10" />
+        </property>
+        <property name="noRm" type="string">
+            <column name="noRm" length="20" />
+        </property>
+        <property name="nama" type="string">
+            <column name="nama" length="25" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="65535" />
+        </property>
+        <property name="namaKlinik" type="string">
+            <column name="namaKlinik" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

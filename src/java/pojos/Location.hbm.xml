@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 31, 2018 2:37:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Location" table="location" catalog="rsku" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="lat" type="java.lang.Double">
+            <column name="lat" precision="22" scale="0" />
+        </property>
+        <property name="lng" type="java.lang.Double">
+            <column name="lng" precision="22" scale="0" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
